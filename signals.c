@@ -7,9 +7,12 @@ static void sighandler(int signo){
   if(signo == SIGINT){
     printf("program exited due to SIGINT");
   }
+  exit(1);
 }
 
 int main(){
+  signal(SIGINT, sighandler)
+
   while(1){
     printf("Process ID: %d\n", getpid());
     sleep(1);
