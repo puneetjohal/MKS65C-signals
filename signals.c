@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlid.h>
 #include <unistd.h>
 #include <signal.h>
 #include <errno.h>
@@ -11,7 +12,7 @@ static void sighandler(int signo){
 }
 
 int main(){
-  signal(SIGINT, sighandler)
+  signal(SIGINT, sighandler);
 
   while(1){
     printf("Process ID: %d\n", getpid());
