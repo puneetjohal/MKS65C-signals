@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlid.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
 #include <errno.h>
